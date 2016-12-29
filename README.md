@@ -8,6 +8,6 @@
 7. [分组查询](grouping query.md)
 8. [多表查询](multi-table query.md)
 9. [子查询](sub query.md)
-10. [PL/SQL](PL#SQL.md)
+10. [PL/SQL](PL%23SQL.md)
 11. [存储过程、存储函数](stored procedures and function.md)
 12. [触发器](trigger.md)
