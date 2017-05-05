@@ -39,4 +39,4 @@ column_name datatype, ...
 	* 修改表名：`RENAME table_name TO new_table_name;`
 3. 删除表
 	* `TRUNCATE TABLE table_name;`(删除表中全部数据，不删除表，比 delete 快)
-	* `DROP TABLE table_table;`(删除表和表中数据)
+	* `DROP TABLE table_name;`(删除表和表中数据)
