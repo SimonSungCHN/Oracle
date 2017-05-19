@@ -7,8 +7,8 @@
 
 #### 外链接
 * 核心：通过外链接，把对于连接条件不成立的记录，任然包含在最后的结果中
-* 左外链接：当连接条件不成立的时候，等号左边的表仍然被包含（例：`select d.deptno,d.dname,count(e.empno) from emp e left join dept d on e.deptno =(+) d.deptno group by d.deptno,d.dname;`）
-* 右外链接：当连接条件不成立的时候，等号右边的表仍然被包含（例：`select d.deptno,d.dname,count(e.empno) from emp e right join dept d on e.deptno(+) = d.deptno group by d.deptno,d.dname;`）
+* 左外链接：当连接条件不成立的时候，等号左边的表仍然被包含（例：`select d.deptno,d.dname,count(e.empno) from emp e left join dept d on e.deptno = d.deptno group by d.deptno,d.dname;`）
+* 右外链接：当连接条件不成立的时候，等号右边的表仍然被包含（例：`select d.deptno,d.dname,count(e.empno) from emp e right join dept d on e.deptno = d.deptno group by d.deptno,d.dname;`）
 
 #### 自连接
 * 核心：通过别名，将同一张表视为多张表（例：`select e.ename,b.ename from emp e,emp b where e.mgr=b.empno;`）
