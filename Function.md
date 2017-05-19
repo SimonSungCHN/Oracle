@@ -14,20 +14,20 @@
 
 	2. 字符函数
 		* 大小写转换函数：
-			 * UPPER(char)：小写转大写
-			 * LOWER(char)：大写转小写
-			 * INITCAP(char)：首字母转大写
-		* 获取子字符串函数：SUBSTR(char,[m[,n]])
+			 * UPPER(c1)：小写转大写
+			 * LOWER(c1)：大写转小写
+			 * INITCAP(c1)：首字母转大写
+		* 获取子字符串函数：SUBSTR(c1,[m[,n]])
 			 * m 是取子串的开始位置，从1开始
 			 * n 是截取子串的位数，当 n 省略时表示从 m 的位置截取到字符串末尾
 			 * m 为0表示从字符串的字母开始首截取，m 为负数表示从字符串的尾部开始截取
-		* 获取字符串长度函数：LENGTH(char)
-		* 字符串连接函数：CONCAT(char1, char2),与||操作符的作用一样，即 char1||char2
+		* 获取字符串长度函数：LENGTH(c1)
+		* 字符串连接函数：CONCAT(c1, c2),与 || 操作符的作用一样，即 c1 || c2
 		* 去除子串函数：
-			* TRIM(c2 FROM c1),从字符串 c1 中去除**字符** c2，c2 省略是去除首尾空格
-			* LTRIM(c1[,c2]),只去除头部开始的连续出现的 c2 字符，c2 省略是去除首部空格
-			* RTRIM(c1[,c2]),只去除尾部开始的连续出现的 c2 字符，c2 省略是去除尾部空格
-		* 替换函数：REPLACE(char,s_string[,r_string]),省略 r_string 用空格替换
+			* TRIM(c2 FROM c1),从字符串 c1 中去除**单个字符** c2，c2 省略是去除首尾空格
+			* LTRIM(c1[,c2]),只去除头部开始的连续出现的 c2 **单个字符**，c2 省略是去除首部空格
+			* RTRIM(c1[,c2]),只去除尾部开始的连续出现的 c2 **单个字符**，c2 省略是去除尾部空格
+		* 替换函数：REPLACE(c1, s_string[,r_string])，将字符串 c1 中所有子字符串 s_string 替换成r_string，省略 r_string 用空格替换
 
 	3. 日期函数
 		* 系统时间：SYSDATE(默认格式：DD-MON-RR)
